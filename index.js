@@ -18,10 +18,12 @@ app.use(methodOverride('_method'))
 app.use('/articles',articlerouter)
 
 dotenv.config(); 
-  
-const mongopassword = process.env.MONGODB_PASSWORD ;
 
-mongoose.connect(`mongodb+srv://kavinchakravarthi2934:${mongopassword}@cluster0.x984kjk.mongodb.net/blogwebdatabase`)
+const username = process.env.MONGODB_USERNAME ;
+const password = process.env.MONGODB_PASSWORD ;
+
+
+mongoose.connect(`mongodb+srv://${username}:${password}@cluster0.jzerybf.mongodb.net/registrationFormDB`)
 
 app.get('/',async (req,res) => {
 
