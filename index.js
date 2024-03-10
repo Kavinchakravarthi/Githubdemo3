@@ -21,7 +21,7 @@ dotenv.config();
   
 const mongopassword = process.env.MONGODB_PASSWORD ;
 
-mongoose.connect(`mongodb+srv://sindhu:${mongopassword}@cluster0.x984kjk.mongodb.net/blogwebdatabase`)
+mongoose.connect(`mongodb+srv://kavinchakravarthi2934:${mongopassword}@cluster0.x984kjk.mongodb.net/blogwebdatabase`)
 
 app.get('/',async (req,res) => {
 
